@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="RTRouge">#CE2636</color>
+    <color name="RTVert">#309C47</color>
+    <color name="RTBleu">#2B87D1</color>
+    <color name="RTBlanc">#FFFFFF</color>
+    <color name="RTGris">#DCDCDC</color>
+    <color name="RTJaune">#FFD700</color>
+
+    <color name="defaultGris">#919191</color>
+
+</resources>

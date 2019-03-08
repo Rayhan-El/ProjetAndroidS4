@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".game3_equationrandom.ScorePopUpGame3" >
+
+
+    <TextView
+        android:id="@+id/bilanTextGame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bilan"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/LayoutError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bilanTextGame2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/erreursText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/erreur"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/erreursVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutTempsMoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutTempsTotal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tempsMoyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tempsMoyResolution"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tempsMoyVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutTempsTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutError"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tempsTotalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tempsTotalResolution"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tempsTotalVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnContinuer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutTempsMoy"
+        android:layout_centerHorizontal="true"
+        android:text="@string/continuer"
+        android:textAllCaps="false"
+        android:textColor="@color/RTBlanc"
+        android:textSize="25sp"
+        app:backgroundTint="@color/RTBleu" />
+
+
+</RelativeLayout>

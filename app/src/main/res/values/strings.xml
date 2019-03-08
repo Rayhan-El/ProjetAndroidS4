@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Better Call Sam</string>
+
+    <string name="nameGame1">Reaction Time</string>
+    <string name="nameGame2">Form Click</string>
+    <string name="nameGame3">Equation Game</string>
+
+    <string name="preventionConsoAlcool">L\'abus d\'alcool est dangereux pour la santé, consommez avec modération</string>
+
+    <string name="btnJouer">Jouer pour tester tes réflexes !</string>
+
+    <string name="vide"> </string>
+
+    <string name="btnInit">Appuyez pour jouer</string>
+    <string name="btnRed">Attendez&#8230;</string>
+    <string name="btnGreen">Appuyez !</string>
+    <string name="btnTooSoon">Trop tôt !</string>
+
+    <string name="infoInit">Quand le bouton devient vert, appuyez aussi vite que possible.</string>
+    <string name="infoTooSoon">Appuyez pour réessayer.</string>
+    <string name="infoEnd">Appuyer pour continuer.</string>
+
+    <string name="moyenneTexte">Moyenne :&#160;</string>
+    <string name="moyenneValeur">%1$d ms</string>
+    <string name="essaisTexte">Essais :&#160;</string>
+    <string name="essaisValeur">%1$d sur %2$d</string>
+
+    <string name="bilan">Bilan</string>
+    <string name="continuer">Continuer</string>
+    <string name="accueil">Accueil</string>
+    <string name="BackInfo">Veuillez appuyer sur Continuer</string>
+
+    <string name="infoGame2">Appuye sur tous les &lt;b>%1$s&lt;/b> le plus rapidement possible ! Attention à ne pas faire d\'erreur !</string>
+    <string name="textScoreGame2">score :&#160;</string>
+    <string name="textScoreNGame2">Score %1$d :&#160;</string>
+    <string name="textTempsGame2">Temps :&#160;</string>
+    <string name="tempsValeurGame2">%1$s secondes</string>
+
+    <plurals name="scoreValeurGame2">
+        <item quantity="zero">%1$d pt</item>
+        <item quantity="one">%1$d pt</item>
+        <item quantity="other">%1$d pts</item>
+    </plurals>
+
+    <string name="equation">%1$s =&#160;</string>
+    <string name="tempsResolution">Résolu en :&#160;</string>
+    <string name="tempsMoyResolution">Temps moyen :&#160;</string>
+    <string name="tempsTotalResolution">Temps total :&#160;</string>
+    <string name="erreur">Erreurs :&#160;</string>
+
+    <string name="TitreReflexeGameBilan">C\'est terminé !\nBravo !</string>
+    <string name="etat">Etat :</string>
+    <string name="etatSafe">&lt;font color=\"#32CD32\">Reflexe Correct !&lt;/font>&lt;br/>Vous pouvez vous mouvoir à pied sans aucun soucis !</string>
+    <string name="etatAttention">&lt;font color=\"#F0C300\">Reflexe un peu faible.&lt;/font>&lt;br/>Veuillez faire attention lors de vos prochains déplacements.</string>
+    <string name="etatDangereux">&lt;font color=\"#ED0000\">Reflexe très faible !&lt;/font>&lt;br/>Veuillez joindre un ami capable de vous prendre en main.</string>
+
+</resources>
