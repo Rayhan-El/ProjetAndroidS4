@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Gamerz</string>
+    <string name="app_desc">\t\tL\'application Gamerz est une série de 3 mini-jeux défiant vos réflexes. </string>
+    <string name="slogan">Une application de Gamerz fait pour les Gamerz par des Gamerz</string>
+
+    <string name="author">Auteurs :</string>
+    <string name="rayhan">EL FAKHADI Rayhan</string>
+    <string name="robin">CONQUET Robin</string>
 
     <string name="nameGame1">Reaction Time</string>
     <string name="nameGame2">Form Click</string>

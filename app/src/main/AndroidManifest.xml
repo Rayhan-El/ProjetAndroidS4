@@ -15,6 +15,18 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".APropos">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Statistique">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
         <activity android:name="fr.kounecorp.gamerz.game1_reacttime.ReactTime">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
