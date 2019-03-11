@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Gamerz</string>
+    <string name="entrezpseudo"> Entrez votre pseudo </string>
     <string name="app_desc">\t\tL\'application Gamerz est une série de 3 mini-jeux défiant vos réflexes. </string>
     <string name="slogan">Une application de Gamerz fait pour les Gamerz par des Gamerz</string>
 

@@ -1,6 +1,7 @@
 package fr.kounecorp.gamerz.game1_reacttime;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import fr.kounecorp.gamerz.Index;
 import fr.kounecorp.gamerz.R;
 
 public class ReactTime extends AppCompatActivity {
@@ -19,6 +21,8 @@ public class ReactTime extends AppCompatActivity {
     public final static int VERT  = 0xFF309C47;
     public final static int BLEU  = 0xFF2B87D1;
     public final static int JAUNE = 0xFFFFD700;
+
+
 
     private final static int MAXTRIES = 5;
 
