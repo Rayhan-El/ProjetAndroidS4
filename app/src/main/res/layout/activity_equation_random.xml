@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".game3_equationrandom.EquationGame">
 
-    <fr.kounecorp.bettercallsam.game2_noname.ChronometerMillis
+    <fr.kounecorp.gamerz.game2_noname.ChronometerMillis
         android:id="@+id/chronoEquation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

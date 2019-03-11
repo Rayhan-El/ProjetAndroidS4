@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">Better Call Sam</string>
+    <string name="app_name">Gamerz</string>
 
     <string name="nameGame1">Reaction Time</string>
     <string name="nameGame2">Form Click</string>
     <string name="nameGame3">Equation Game</string>
+
+    <string name="menu_stat">Statistiques</string>
+    <string name="menu_propos">&#192; propos</string>
 
     <string name="preventionConsoAlcool">L\'abus d\'alcool est dangereux pour la santé, consommez avec modération</string>
 
