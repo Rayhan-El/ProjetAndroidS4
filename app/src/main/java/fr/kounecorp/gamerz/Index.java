@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -76,6 +77,9 @@ public class Index extends AppCompatActivity {
                 partie.put("DateHeure",datepartie);
                 db.insert("Partie",null,partie);
                 db.close();
+
+
+
                 Intent ReactTime = new Intent(Index.this,
                         fr.kounecorp.gamerz.game1_reacttime.ReactTime.class);
                 startActivity(ReactTime);
@@ -108,4 +112,6 @@ public class Index extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
 }

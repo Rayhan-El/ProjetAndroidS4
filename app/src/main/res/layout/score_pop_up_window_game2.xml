@@ -33,7 +33,7 @@
             android:id="@+id/score1Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/textScoreNGame2"
+            android:text="@string/textScoreGame2"
             android:textColor="@android:color/black"
             android:textSize="24sp" />
 
@@ -45,57 +45,12 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/LayoutScore2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/LayoutScore1"
-        android:layout_marginBottom="10dp">
-
-        <TextView
-            android:id="@+id/score2Text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textScoreNGame2"
-            android:textColor="@android:color/black"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/score2Val"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/LayoutScore3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/LayoutScore2"
-        android:layout_marginBottom="10dp">
-
-        <TextView
-            android:id="@+id/score3Text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textScoreNGame2"
-            android:textColor="@android:color/black"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/score3Val"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24sp" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/LayoutTemps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/LayoutScore3"
+        android:layout_below="@id/LayoutScore1"
         android:layout_marginBottom="40dp">
 
         <TextView

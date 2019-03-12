@@ -29,7 +29,6 @@ public class Game2 extends Activity {
         valScore.setTextColor(getResources().getColor(R.color.defaultGris));
 
         myCanvas.setScoreValueView(valScore);
-        myCanvas.setScoreReactTime(getIntent().getIntExtra("avg",0));
 
         Runnable r = new Runnable() {
             @Override

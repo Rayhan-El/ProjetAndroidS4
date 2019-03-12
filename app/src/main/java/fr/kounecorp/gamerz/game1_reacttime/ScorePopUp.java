@@ -8,12 +8,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import fr.kounecorp.gamerz.DataBase;
 import fr.kounecorp.gamerz.R;
 import fr.kounecorp.gamerz.game2_noname.Game2;
 
 public class ScorePopUp extends Activity {
 
     private int avg;
+    private DataBase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,11 @@ public class ScorePopUp extends Activity {
         int g = ReactTime.VERT;
         int y = ReactTime.JAUNE;
 
+        this.db = new DataBase(this);
+        this.avg = db.getLastScore("tempsReactTime");
+
         TextView avgScore = findViewById(R.id.avgScore);
-        avg = getIntent().getIntExtra("avg",0);
+
 
         int col = (avg >= 450) ? r : ((avg >= 250) ? g : y);
         avgScore.setTextColor(col);
@@ -37,7 +42,6 @@ public class ScorePopUp extends Activity {
             @Override
             public void onClick(View v) {
                 Intent game2 = new Intent(ScorePopUp.this,Game2.class);
-                game2.putExtra("avg", avg);
                 startActivity(game2);
             }
         });

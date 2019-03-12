@@ -8,10 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import fr.kounecorp.gamerz.DataBase;
 import fr.kounecorp.gamerz.Index;
 import fr.kounecorp.gamerz.R;
 
@@ -37,12 +39,17 @@ public class ReactTime extends AppCompatActivity {
     private long reactionTime;
     private CountDownTimer cd;
     private Boolean canClick;
+    private DataBase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_react_time);
 
+
+
+
+        this.db = new DataBase(this);
         this.infoText = findViewById(R.id.info);
         this.avgText = findViewById(R.id.avg);
         this.triesText = findViewById(R.id.tries);
@@ -136,8 +143,9 @@ public class ReactTime extends AppCompatActivity {
     }
 
     private void lunchPopUp() {
+        String pseudo = db.getLastPseudo();
+        db.addReactToDatabaseWherePseudo(pseudo,avg);
         Intent scorePopUp = new Intent(ReactTime.this,ScorePopUp.class);
-        scorePopUp.putExtra("avg", avg);
         startActivity(scorePopUp);
     }
 

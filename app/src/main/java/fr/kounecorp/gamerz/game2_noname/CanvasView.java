@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import fr.kounecorp.gamerz.DataBase;
 import fr.kounecorp.gamerz.R;
 
 
@@ -40,9 +41,11 @@ public class CanvasView extends View {
     private TextView scoreValue;
     private TextView infoGame;
     private ChronometerMillis chrono;
+    private DataBase db;
 
     public CanvasView(Context c, AttributeSet attrs) {
         super(c, attrs);
+        this.db = new DataBase(this.getContext());
         this.formes = new ArrayList<>();
         this.random = new Random();
         this.scores = new int[CanvasView.NBPARTIESMAX];
@@ -194,9 +197,11 @@ public class CanvasView extends View {
 
     private void lunchPopUp() {
         Intent scorePopUp = new Intent(this.getContext(), ScorePopUpGame2.class);
-        scorePopUp.putExtra("avg", this.scoreReactTime);
-        scorePopUp.putExtra("scores", this.scores);
-        scorePopUp.putExtra("time", this.chrono.getTimeElapsedInSeconds());
+
+        String pseudo = db.getLastPseudo();
+        db.addScoreFormToDatabaseWherePseudo(pseudo,this.scores[NBPARTIESMAX-1]);
+        db.addTempsFormToDatabaseWherePseudo(pseudo,this.chrono.getTimeElapsedInSeconds());
+
         this.getContext().startActivity(scorePopUp);
     }
 
