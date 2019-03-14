@@ -33,7 +33,7 @@
             android:id="@+id/score1Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/textScoreGame2"
+            android:text="@string/score"
             android:textColor="@android:color/black"
             android:textSize="24sp" />
 

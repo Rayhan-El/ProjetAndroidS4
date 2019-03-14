@@ -42,26 +42,26 @@ public class DataBase extends SQLiteOpenHelper {
 
     public void addReactToDatabaseWherePseudo(String pseudo, int score) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE Partie SET tempsReactTime = " +score + " WHERE Pseudo = \'"+pseudo+"\'";
+        String query = "UPDATE Partie SET tempsReactTime = " + score + " WHERE Pseudo = \'"+pseudo+"\'";
         db.execSQL(query);
-
-
     }
 
     public void addScoreFormToDatabaseWherePseudo(String pseudo, int score) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE Partie SET scoreFormClick = " +score + " WHERE Pseudo = \'"+pseudo+"\'";
+        String query = "UPDATE Partie SET scoreFormClick = " + score + " WHERE Pseudo = \'"+pseudo+"\'";
         db.execSQL(query);
-
-
     }
 
     public void addTempsFormToDatabaseWherePseudo(String pseudo, double temps) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE Partie SET tempsFormClick = " +temps + " WHERE Pseudo = \'"+pseudo+"\'";
+        String query = "UPDATE Partie SET tempsFormClick = " + temps + " WHERE Pseudo = \'"+pseudo+"\'";
         db.execSQL(query);
+    }
 
-
+    public void addScoreFastClickerToDatabaseWherePseudo(String pseudo, int score) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "UPDATE Partie SET scoreFastClicker = " + score + " WHERE Pseudo = \'"+pseudo+"\'";
+        db.execSQL(query);
     }
 
     public String getLastPseudo() {
@@ -79,7 +79,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     public int getLastScore(String nomJeu) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT " +nomJeu+" FROM PARTIE ORDER BY DateHeure DESC LIMIT 1";
+        String query = "SELECT " + nomJeu + " FROM PARTIE ORDER BY DateHeure DESC LIMIT 1";
         Cursor data = db.rawQuery(query,null);
         int score =-1;
         if (data.moveToFirst()) {
@@ -87,23 +87,20 @@ public class DataBase extends SQLiteOpenHelper {
         }
         data.close();
 
-
         return score;
-
     }
 
-    public double getLastTime () {
+    public double getLastTime() {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT tempsFormClick FROM PARTIE ORDER BY DateHeure DESC LIMIT 1";
         Cursor data = db.rawQuery(query,null);
         double time =-1;
         if (data.moveToFirst()) {
-            time = data.getInt(0);
+            time = data.getDouble(0);
         }
         data.close();
 
         return time;
-
     }
 
 

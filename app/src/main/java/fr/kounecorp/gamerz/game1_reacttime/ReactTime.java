@@ -1,7 +1,6 @@
 package fr.kounecorp.gamerz.game1_reacttime;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +13,6 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import fr.kounecorp.gamerz.DataBase;
-import fr.kounecorp.gamerz.Index;
 import fr.kounecorp.gamerz.R;
 
 public class ReactTime extends AppCompatActivity {
@@ -24,9 +22,7 @@ public class ReactTime extends AppCompatActivity {
     public final static int BLEU  = 0xFF2B87D1;
     public final static int JAUNE = 0xFFFFD700;
 
-
-
-    private final static int MAXTRIES = 5;
+    private final static int MAXTRIES = 1;
 
     private Button b;
     private TextView triesText;
@@ -45,9 +41,6 @@ public class ReactTime extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_react_time);
-
-
-
 
         this.db = new DataBase(this);
         this.infoText = findViewById(R.id.info);
@@ -146,7 +139,7 @@ public class ReactTime extends AppCompatActivity {
         String pseudo = db.getLastPseudo();
         db.addReactToDatabaseWherePseudo(pseudo,avg);
         Intent scorePopUp = new Intent(ReactTime.this,ScorePopUp.class);
-        startActivity(scorePopUp);
+        startActivityForResult(scorePopUp, 10);
     }
 
     private void countDown() {
@@ -164,5 +157,13 @@ public class ReactTime extends AppCompatActivity {
         };
         this.cd.start();
     }
+
+    @Override
+    public void onBackPressed() {
+        // Empeche l'utilisateur a faire retour, il est obligé de cliquer sur "Continuer"
+        Toast.makeText(getApplicationContext(), R.string.BackOnGame, Toast.LENGTH_SHORT).show();
+    }
+
+
 
 }

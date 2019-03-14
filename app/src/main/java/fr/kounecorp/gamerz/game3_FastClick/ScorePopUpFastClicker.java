@@ -1,4 +1,4 @@
-package fr.kounecorp.gamerz.game1_reacttime;
+package fr.kounecorp.gamerz.game3_FastClick;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,12 +10,11 @@ import android.widget.Toast;
 
 import fr.kounecorp.gamerz.DataBase;
 import fr.kounecorp.gamerz.R;
+import fr.kounecorp.gamerz.game1_reacttime.ReactTime;
 import fr.kounecorp.gamerz.game2_noname.Game2;
+import fr.kounecorp.gamerz.reflexe_game_bilan.ReflexeGameBilan;
 
-public class ScorePopUp extends Activity {
-
-    private int avg;
-    private DataBase db;
+public class ScorePopUpFastClicker extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,23 +25,25 @@ public class ScorePopUp extends Activity {
         int g = ReactTime.VERT;
         int y = ReactTime.JAUNE;
 
-        this.db = new DataBase(this);
-        this.avg = db.getLastScore("tempsReactTime");
+        DataBase db = new DataBase(this);
+        int score = db.getLastScore("scoreFastClicker");
 
         TextView avgScore = findViewById(R.id.avgScore);
 
 
-        int col = (avg >= 450) ? r : ((avg >= 250) ? g : y);
+        int col = (score <= 15) ? r : ((score <= 35) ? g : y);
         avgScore.setTextColor(col);
-        avgScore.setText(getString(R.string.moyenneValeur, avg));
+        avgScore.setText(getResources().getQuantityString(R.plurals.scoreValeurGame2,
+                Math.abs(score),
+                score));
 
         Button continuer = findViewById(R.id.btnContinuer);
 
         continuer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent game2 = new Intent(ScorePopUp.this,Game2.class);
-                startActivityForResult(game2, 10);
+                Intent bilan = new Intent(ScorePopUpFastClicker.this,ReflexeGameBilan.class);
+                startActivityForResult(bilan, 10);
             }
         });
     }

@@ -27,6 +27,7 @@
             </intent-filter>
         </activity>
 
+
         <activity android:name="fr.kounecorp.gamerz.game1_reacttime.ReactTime">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -36,6 +37,7 @@
         <activity
             android:name="fr.kounecorp.gamerz.game1_reacttime.ScorePopUp"
             android:theme="@style/PopUpTheme" />
+
 
         <activity android:name="fr.kounecorp.gamerz.game2_noname.Game2">
             <intent-filter>
@@ -47,14 +49,15 @@
             android:name="fr.kounecorp.gamerz.game2_noname.ScorePopUpGame2"
             android:theme="@style/PopUpTheme" />
 
-        <activity android:name="fr.kounecorp.gamerz.game3_equationrandom.EquationGame">
+
+        <activity android:name=".game3_FastClick.FastClicker">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="fr.kounecorp.gamerz.game3_equationrandom.ScorePopUpGame3"
+            android:name="fr.kounecorp.gamerz.game3_FastClick.ScorePopUpFastClicker"
             android:theme="@style/PopUpTheme" />
 
         <activity android:name="fr.kounecorp.gamerz.reflexe_game_bilan.ReflexeGameBilan">

@@ -30,11 +30,13 @@ public class Statistique extends AppCompatActivity {
                 // Lancer page des statistiques
                 Intent stat = new Intent(this, Statistique.class);
                 startActivity(stat);
+                finish();
                 return true;
             case R.id.propos:
                 // Lancer page A propos
                 Intent apropos = new Intent(this, APropos.class);
                 startActivity(apropos);
+                finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

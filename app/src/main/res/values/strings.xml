@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Gamerz</string>
+    <string name="app_desc">\t\tL\'application Gamerz est une série de 3 mini-jeux metant au défi vos réflexes et votre rapidité. </string>
     <string name="entrezpseudo"> Entrez votre pseudo </string>
-    <string name="app_desc">\t\tL\'application Gamerz est une série de 3 mini-jeux défiant vos réflexes. </string>
     <string name="slogan">Une application de Gamerz fait pour les Gamerz par des Gamerz</string>
 
     <string name="author">Auteurs :</string>
@@ -10,7 +10,7 @@
 
     <string name="nameGame1">Reaction Time</string>
     <string name="nameGame2">Form Click</string>
-    <string name="nameGame3">Equation Game</string>
+    <string name="nameGame3">Fast Clicker</string>
 
     <string name="menu_stat">Statistiques</string>
     <string name="menu_propos">&#192; propos</string>
@@ -39,9 +39,10 @@
     <string name="continuer">Continuer</string>
     <string name="accueil">Accueil</string>
     <string name="BackInfo">Veuillez appuyer sur Continuer</string>
+    <string name="BackOnGame">Veuillez finir la série de jeu</string>
 
     <string name="infoGame2">Appuye sur tous les &lt;b>%1$s&lt;/b> le plus rapidement possible ! Attention à ne pas faire d\'erreur !</string>
-    <string name="textScoreGame2">score :&#160;</string>
+    <string name="score">score :&#160;</string>
     <string name="textScoreNGame2">Score %1$d :&#160;</string>
     <string name="textTempsGame2">Temps :&#160;</string>
     <string name="tempsValeurGame2">%1$s secondes</string>
@@ -51,6 +52,9 @@
         <item quantity="one">%1$d pt</item>
         <item quantity="other">%1$d pts</item>
     </plurals>
+
+    <string name="go">Go !</string>
+    <string name="fastClickEndGame">Stop !</string>
 
     <string name="equation">%1$s =&#160;</string>
     <string name="tempsResolution">Résolu en :&#160;</string>

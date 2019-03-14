@@ -19,6 +19,8 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import fr.kounecorp.gamerz.game3_FastClick.FastClicker;
+
 
 public class Index extends AppCompatActivity {
 
@@ -82,7 +84,7 @@ public class Index extends AppCompatActivity {
 
                 Intent ReactTime = new Intent(Index.this,
                         fr.kounecorp.gamerz.game1_reacttime.ReactTime.class);
-                startActivity(ReactTime);
+                startActivityForResult(ReactTime, 10);
 
             }
         });
@@ -100,8 +102,8 @@ public class Index extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.statMenu:
                 // Lancer page des statistiques
-                Intent alert = new Intent(this, Statistique.class);
-                startActivity(alert);
+                Intent stat = new Intent(this, Statistique.class);
+                startActivity(stat);
                 return true;
             case R.id.propos:
                 // Lancer page A propos
@@ -112,6 +114,5 @@ public class Index extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 
 }

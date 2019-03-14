@@ -13,7 +13,7 @@ import java.util.Locale;
 
 import fr.kounecorp.gamerz.DataBase;
 import fr.kounecorp.gamerz.R;
-import fr.kounecorp.gamerz.game3_equationrandom.EquationGame;
+import fr.kounecorp.gamerz.game3_FastClick.FastClicker;
 
 public class ScorePopUpGame2 extends Activity {
 
@@ -62,8 +62,8 @@ public class ScorePopUpGame2 extends Activity {
         continuer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent game3 = new Intent(ScorePopUpGame2.this,EquationGame.class);
-                startActivity(game3);
+                Intent game3 = new Intent(ScorePopUpGame2.this, FastClicker.class);
+                startActivityForResult(game3, 10);
             }
         });
     }

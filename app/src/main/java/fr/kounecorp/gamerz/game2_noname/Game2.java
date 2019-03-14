@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.os.SystemClock;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import fr.kounecorp.gamerz.R;
 
@@ -28,6 +29,7 @@ public class Game2 extends Activity {
         TextView valScore = findViewById(R.id.valScore);
         valScore.setTextColor(getResources().getColor(R.color.defaultGris));
 
+        myCanvas.setGameActivity(this);
         myCanvas.setScoreValueView(valScore);
 
         Runnable r = new Runnable() {
@@ -44,10 +46,6 @@ public class Game2 extends Activity {
 
         Handler h = new Handler();
         h.postDelayed(r, 500);
-
-
-
-
     }
 
     public void clearCanvas(View v) {
@@ -57,5 +55,11 @@ public class Game2 extends Activity {
     public void newFormes(View v) {
         myCanvas.initializeFormes(1);
         myCanvas.invalidate();
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Empeche l'utilisateur a faire retour, il est obligé de cliquer sur "Continuer"
+        Toast.makeText(getApplicationContext(), R.string.BackOnGame, Toast.LENGTH_SHORT).show();
     }
 }

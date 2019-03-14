@@ -1,5 +1,6 @@
 package fr.kounecorp.gamerz.game2_noname;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Canvas;
@@ -42,6 +43,7 @@ public class CanvasView extends View {
     private TextView infoGame;
     private ChronometerMillis chrono;
     private DataBase db;
+    private Activity gameActivity;
 
     public CanvasView(Context c, AttributeSet attrs) {
         super(c, attrs);
@@ -53,6 +55,10 @@ public class CanvasView extends View {
         this.theChoosen = -1;
         this.width = 0;
         this.height = 0;
+    }
+
+    public void setGameActivity(Activity a) {
+        this.gameActivity = a;
     }
 
     public void initializeFormes(int nbAll) {
@@ -196,13 +202,14 @@ public class CanvasView extends View {
 
 
     private void lunchPopUp() {
-        Intent scorePopUp = new Intent(this.getContext(), ScorePopUpGame2.class);
-
         String pseudo = db.getLastPseudo();
         db.addScoreFormToDatabaseWherePseudo(pseudo,this.scores[NBPARTIESMAX-1]);
         db.addTempsFormToDatabaseWherePseudo(pseudo,this.chrono.getTimeElapsedInSeconds());
 
-        this.getContext().startActivity(scorePopUp);
+        Intent scorePopUp = new Intent(this.getContext(), ScorePopUpGame2.class);
+        gameActivity.startActivityForResult(scorePopUp, 10);
+
+
     }
 
     private void updateScoreN(int n) {
