@@ -15,7 +15,18 @@
     <string name="menu_stat">Statistiques</string>
     <string name="menu_propos">&#192; propos</string>
 
-    <string name="preventionConsoAlcool">L\'abus d\'alcool est dangereux pour la santé, consommez avec modération</string>
+    <string name="pseudo">Pseudo :&#160;</string>
+    <string name="toutLeMonde">Tout le monde</string>
+    <string name="highScore">High Score</string>
+    <string name="scoreMoy">Score moyen</string>
+
+    <string name="reactTimeHS">Temps de réaction le plus rapide : &lt;font color=\"green\"> %1$d &lt;/font> ms</string>
+    <string name="formClickHS">meilleur score : &lt;font color=\"green\"> %1$d &lt;/font> effectué en &lt;font color=\"green\"> %2$s secondes &lt;/font> </string>
+    <string name="fastClickerHS"> meilleur score : &lt;font color=\"green\"> %1$d &lt;/font> </string>
+
+    <string name="reactTimeMOY">Temps de réaction moyen : &lt;font color=\"green\"> %1$d &lt;/font> ms</string>
+    <string name="formClickMOY">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> \nTemps moyen &lt;font color=\"green\"> %2$s secondes &lt;/font> </string>
+    <string name="fastClickerMOY">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> </string>
 
     <string name="btnJouer">Jouer pour tester tes réflexes !</string>
 
@@ -56,16 +67,6 @@
     <string name="go">Go !</string>
     <string name="fastClickEndGame">Stop !</string>
 
-    <string name="equation">%1$s =&#160;</string>
-    <string name="tempsResolution">Résolu en :&#160;</string>
-    <string name="tempsMoyResolution">Temps moyen :&#160;</string>
-    <string name="tempsTotalResolution">Temps total :&#160;</string>
-    <string name="erreur">Erreurs :&#160;</string>
-
     <string name="TitreReflexeGameBilan">C\'est terminé !\nBravo !</string>
-    <string name="etat">Etat :</string>
-    <string name="etatSafe">&lt;font color=\"#32CD32\">Reflexe Correct !&lt;/font>&lt;br/>Vous pouvez vous mouvoir à pied sans aucun soucis !</string>
-    <string name="etatAttention">&lt;font color=\"#F0C300\">Reflexe un peu faible.&lt;/font>&lt;br/>Veuillez faire attention lors de vos prochains déplacements.</string>
-    <string name="etatDangereux">&lt;font color=\"#ED0000\">Reflexe très faible !&lt;/font>&lt;br/>Veuillez joindre un ami capable de vous prendre en main.</string>
 
 </resources>

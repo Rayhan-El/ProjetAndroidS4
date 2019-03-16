@@ -8,14 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="fr.kounecorp.gamerz.Index">
+        <activity
+            android:name="fr.kounecorp.gamerz.Index"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".APropos">
+        <activity
+            android:name=".APropos"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
@@ -28,7 +32,9 @@
         </activity>
 
 
-        <activity android:name="fr.kounecorp.gamerz.game1_reacttime.ReactTime">
+        <activity
+            android:name="fr.kounecorp.gamerz.game1_reacttime.ReactTime"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
@@ -36,10 +42,13 @@
 
         <activity
             android:name="fr.kounecorp.gamerz.game1_reacttime.ScorePopUp"
-            android:theme="@style/PopUpTheme" />
+            android:theme="@style/PopUpTheme"
+            android:screenOrientation="portrait" />
 
 
-        <activity android:name="fr.kounecorp.gamerz.game2_noname.Game2">
+        <activity
+            android:name="fr.kounecorp.gamerz.game2_noname.Game2"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
@@ -47,10 +56,13 @@
 
         <activity
             android:name="fr.kounecorp.gamerz.game2_noname.ScorePopUpGame2"
-            android:theme="@style/PopUpTheme" />
+            android:theme="@style/PopUpTheme"
+            android:screenOrientation="portrait" />
 
 
-        <activity android:name=".game3_FastClick.FastClicker">
+        <activity
+            android:name=".game3_FastClick.FastClicker"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
@@ -58,9 +70,11 @@
 
         <activity
             android:name="fr.kounecorp.gamerz.game3_FastClick.ScorePopUpFastClicker"
-            android:theme="@style/PopUpTheme" />
+            android:theme="@style/PopUpTheme"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name="fr.kounecorp.gamerz.reflexe_game_bilan.ReflexeGameBilan">
+        <activity android:name="fr.kounecorp.gamerz.reflexe_game_bilan.ReflexeGameBilan"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
