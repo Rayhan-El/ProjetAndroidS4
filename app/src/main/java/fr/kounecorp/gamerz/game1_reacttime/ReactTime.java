@@ -22,7 +22,7 @@ public class ReactTime extends AppCompatActivity {
     public final static int BLEU  = 0xFF2B87D1;
     public final static int JAUNE = 0xFFFFD700;
 
-    private final static int MAXTRIES = 1;
+    private final static int MAXTRIES = 3;
 
     private Button b;
     private TextView triesText;

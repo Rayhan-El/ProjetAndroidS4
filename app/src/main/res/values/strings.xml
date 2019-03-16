@@ -25,7 +25,7 @@
     <string name="fastClickerHS"> meilleur score : &lt;font color=\"green\"> %1$d &lt;/font> </string>
 
     <string name="reactTimeMOY">Temps de réaction moyen : &lt;font color=\"green\"> %1$d &lt;/font> ms</string>
-    <string name="formClickMOY">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> \nTemps moyen &lt;font color=\"green\"> %2$s secondes &lt;/font> </string>
+    <string name="formClickMOY">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> &lt;br/>Temps moyen &lt;font color=\"green\"> %2$s secondes &lt;/font> </string>
     <string name="fastClickerMOY">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> </string>
 
     <string name="btnJouer">Jouer pour tester tes réflexes !</string>

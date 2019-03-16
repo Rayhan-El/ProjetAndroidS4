@@ -42,27 +42,52 @@ public class DataBase extends SQLiteOpenHelper {
         onUpgrade(db,oldVersion,newVersion);
     }
 
+    private String getLastDateHeureWherePseudo(String pseudo) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT DateHeure FROM PARTIE WHERE Pseudo = \'"+pseudo+"\' ORDER BY DateHeure DESC LIMIT 1";
+        Cursor data = db.rawQuery(query,null);
+        String score = "";
+        if (data.moveToFirst()) {
+            score = data.getString(0);
+        }
+        data.close();
+
+        return score;
+    }
+
     public void addReactToDatabaseWherePseudo(String pseudo, int score) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE Partie SET tempsReactTime = " + score + " WHERE Pseudo = \'"+pseudo+"\'";
+        String query = "UPDATE Partie " +
+                        "SET tempsReactTime = " + score +
+                        " WHERE Pseudo = \'"+pseudo+"\'" +
+                        " AND DateHeure = DateTime(\'" + getLastDateHeureWherePseudo(pseudo)+"\')";
         db.execSQL(query);
     }
 
     public void addScoreFormToDatabaseWherePseudo(String pseudo, int score) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE Partie SET scoreFormClick = " + score + " WHERE Pseudo = \'"+pseudo+"\'";
+        String query = "UPDATE Partie " +
+                "SET scoreFormClick = " + score +
+                " WHERE Pseudo = \'"+pseudo+"\'" +
+                " AND DateHeure = DateTime(\'" + getLastDateHeureWherePseudo(pseudo)+"\')";
         db.execSQL(query);
     }
 
     public void addTempsFormToDatabaseWherePseudo(String pseudo, double temps) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE Partie SET tempsFormClick = " + temps + " WHERE Pseudo = \'"+pseudo+"\'";
+        String query = "UPDATE Partie " +
+                "SET tempsFormClick = " + temps +
+                " WHERE Pseudo = \'"+pseudo+"\'" +
+                " AND DateHeure = DateTime(\'" + getLastDateHeureWherePseudo(pseudo)+"\')";
         db.execSQL(query);
     }
 
     public void addScoreFastClickerToDatabaseWherePseudo(String pseudo, int score) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE Partie SET scoreFastClicker = " + score + " WHERE Pseudo = \'"+pseudo+"\'";
+        String query = "UPDATE Partie " +
+                "SET scoreFastClicker = " + score +
+                " WHERE Pseudo = \'"+pseudo+"\'" +
+                " AND DateHeure = DateTime(\'" + getLastDateHeureWherePseudo(pseudo)+"\')";
         db.execSQL(query);
     }
 

@@ -1,6 +1,7 @@
 package fr.kounecorp.gamerz;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -32,7 +33,7 @@ public class Statistique extends AppCompatActivity {
     private DataBase db;
 
     private NumberFormat format;
-    private String currentPseudo;
+    private String currentPseudo = "";
     private boolean highScore = true;
 
     @Override
