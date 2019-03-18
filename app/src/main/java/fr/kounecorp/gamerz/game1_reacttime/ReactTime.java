@@ -50,6 +50,8 @@ public class ReactTime extends AppCompatActivity {
 
         this.initialiserViews();
 
+        Toast.makeText(this, this.getIntent().getStringExtra("pseudo"), Toast.LENGTH_SHORT).show();
+
         this.b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

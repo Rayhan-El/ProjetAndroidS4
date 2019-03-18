@@ -84,6 +84,7 @@ public class Index extends AppCompatActivity {
 
                 Intent ReactTime = new Intent(Index.this,
                         fr.kounecorp.gamerz.game1_reacttime.ReactTime.class);
+                ReactTime.putExtra("pseudo",pseudo.getText().toString());
                 startActivityForResult(ReactTime, 10);
 
             }
