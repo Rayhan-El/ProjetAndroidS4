@@ -1,62 +1,62 @@
 <resources>
     <string name="app_name">Gamerz</string>
     <string name="app_desc">\t\tL\'application Gamerz est une série de 3 mini-jeux metant au défi vos réflexes et votre rapidité. </string>
-    <string name="entrezpseudo"> Entrez votre pseudo </string>
+    <string name="entrezpseudo" translatable="false"> Entrez votre pseudo </string>
     <string name="slogan">Une application de Gamerz fait pour les Gamerz par des Gamerz</string>
 
     <string name="author">Auteurs :</string>
-    <string name="rayhan">EL FAKHADI Rayhan</string>
-    <string name="robin">CONQUET Robin</string>
+    <string name="rayhan" translatable="false">EL FAKHADI Rayhan</string>
+    <string name="robin" translatable="false">CONQUET Robin</string>
 
-    <string name="nameGame1">Reaction Time</string>
-    <string name="nameGame2">Form Click</string>
-    <string name="nameGame3">Fast Clicker</string>
+    <string name="nameGame1" translatable="false">Reaction Time</string>
+    <string name="nameGame2" translatable="false">Form Click</string>
+    <string name="nameGame3" translatable="false">Fast Clicker</string>
 
-    <string name="menu_stat">Statistiques</string>
+    <string name="menu_stat" translatable="false">Statistiques</string>
     <string name="menu_propos">&#192; propos</string>
 
-    <string name="pseudo">Pseudo :&#160;</string>
-    <string name="toutLeMonde">Tout le monde</string>
-    <string name="highScore">High Score</string>
-    <string name="scoreMoy">Score moyen</string>
+    <string name="pseudo" translatable="false">Pseudo :&#160;</string>
+    <string name="toutLeMonde" translatable="false">Tout le monde</string>
+    <string name="highScore" translatable="false">High Score</string>
+    <string name="scoreMoy" translatable="false">Score moyen</string>
 
-    <string name="reactTimeHS">Temps de réaction le plus rapide : &lt;font color=\"green\"> %1$d &lt;/font> ms</string>
-    <string name="formClickHS">meilleur score : &lt;font color=\"green\"> %1$d &lt;/font> effectué en &lt;font color=\"green\"> %2$s secondes &lt;/font> </string>
-    <string name="fastClickerHS"> meilleur score : &lt;font color=\"green\"> %1$d &lt;/font> </string>
+    <string name="reactTimeHS" translatable="false">Temps de réaction le plus rapide : &lt;font color=\"green\"> %1$d &lt;/font> ms</string>
+    <string name="formClickHS" translatable="false">meilleur score : &lt;font color=\"green\"> %1$d &lt;/font> effectué en &lt;font color=\"green\"> %2$s secondes &lt;/font> </string>
+    <string name="fastClickerHS" translatable="false"> meilleur score : &lt;font color=\"green\"> %1$d &lt;/font> </string>
 
-    <string name="reactTimeMOY">Temps de réaction moyen : &lt;font color=\"green\"> %1$d &lt;/font> ms</string>
-    <string name="formClickMOY">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> &lt;br/>Temps moyen &lt;font color=\"green\"> %2$s secondes &lt;/font> </string>
-    <string name="fastClickerMOY">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> </string>
+    <string name="reactTimeMOY" translatable="false">Temps de réaction moyen : &lt;font color=\"green\"> %1$d &lt;/font> ms</string>
+    <string name="formClickMOY" translatable="false">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> &lt;br/>Temps moyen &lt;font color=\"green\"> %2$s secondes &lt;/font> </string>
+    <string name="fastClickerMOY" translatable="false">score moyen : &lt;font color=\"green\"> %1$d &lt;/font> </string>
 
-    <string name="btnJouer">Jouer pour tester tes réflexes !</string>
+    <string name="btnJouer" translatable="false">Jouer pour tester tes réflexes !</string>
 
-    <string name="vide"> </string>
+    <string name="vide" translatable="false"> </string>
 
-    <string name="btnInit">Appuyez pour jouer</string>
-    <string name="btnRed">Attendez&#8230;</string>
-    <string name="btnGreen">Appuyez !</string>
-    <string name="btnTooSoon">Trop tôt !</string>
+    <string name="btnInit" translatable="false">Appuyez pour jouer</string>
+    <string name="btnRed" translatable="false">Attendez&#8230;</string>
+    <string name="btnGreen" translatable="false">Appuyez !</string>
+    <string name="btnTooSoon" translatable="false">Trop tôt !</string>
 
-    <string name="infoInit">Quand le bouton devient vert, appuyez aussi vite que possible.</string>
-    <string name="infoTooSoon">Appuyez pour réessayer.</string>
-    <string name="infoEnd">Appuyer pour continuer.</string>
+    <string name="infoInit" translatable="false">Quand le bouton devient vert, appuyez aussi vite que possible.</string>
+    <string name="infoTooSoon" translatable="false">Appuyez pour réessayer.</string>
+    <string name="infoEnd" translatable="false">Appuyer pour continuer.</string>
 
-    <string name="moyenneTexte">Moyenne :&#160;</string>
-    <string name="moyenneValeur">%1$d ms</string>
-    <string name="essaisTexte">Essais :&#160;</string>
-    <string name="essaisValeur">%1$d sur %2$d</string>
+    <string name="moyenneTexte" translatable="false">Moyenne :&#160;</string>
+    <string name="moyenneValeur" translatable="false">%1$d ms</string>
+    <string name="essaisTexte" translatable="false">Essais :&#160;</string>
+    <string name="essaisValeur" translatable="false">%1$d sur %2$d</string>
 
-    <string name="bilan">Bilan</string>
-    <string name="continuer">Continuer</string>
-    <string name="accueil">Accueil</string>
-    <string name="BackInfo">Veuillez appuyer sur Continuer</string>
-    <string name="BackOnGame">Veuillez finir la série de jeu</string>
+    <string name="bilan" translatable="false">Bilan</string>
+    <string name="continuer" translatable="false">Continuer</string>
+    <string name="accueil" translatable="false">Accueil</string>
+    <string name="BackInfo" translatable="false">Veuillez appuyer sur Continuer</string>
+    <string name="BackOnGame" translatable="false">Veuillez finir la série de jeu</string>
 
-    <string name="infoGame2">Appuye sur tous les &lt;b>%1$s&lt;/b> le plus rapidement possible ! Attention à ne pas faire d\'erreur !</string>
-    <string name="score">score :&#160;</string>
-    <string name="textScoreNGame2">Score %1$d :&#160;</string>
-    <string name="textTempsGame2">Temps :&#160;</string>
-    <string name="tempsValeurGame2">%1$s secondes</string>
+    <string name="infoGame2" translatable="false">Appuye sur tous les &lt;b>%1$s&lt;/b> le plus rapidement possible ! Attention à ne pas faire d\'erreur !</string>
+    <string name="score" translatable="false">score :&#160;</string>
+    <string name="textScoreNGame2" translatable="false">Score %1$d :&#160;</string>
+    <string name="textTempsGame2" translatable="false">Temps :&#160;</string>
+    <string name="tempsValeurGame2" translatable="false">%1$s secondes</string>
 
     <plurals name="scoreValeurGame2">
         <item quantity="zero">%1$d pt</item>
@@ -64,9 +64,9 @@
         <item quantity="other">%1$d pts</item>
     </plurals>
 
-    <string name="go">Go !</string>
-    <string name="fastClickEndGame">Stop !</string>
+    <string name="go" translatable="false">Go !</string>
+    <string name="fastClickEndGame" translatable="false">Stop !</string>
 
-    <string name="TitreReflexeGameBilan">C\'est terminé !\nBravo !</string>
+    <string name="TitreReflexeGameBilan" translatable="false">C\'est terminé !\nBravo !</string>
 
 </resources>

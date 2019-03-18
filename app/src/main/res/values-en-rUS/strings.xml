@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gamerz</string>
+    <string name="app_desc">Gamerz is an application with 3 games to test your speed and reflexes.</string>
+    <string name="author">Authors :</string>
+    <string name="menu_propos">About</string>
+    <string name="slogan">A Gamerz app for Gamerz by Gamerz</string>
+</resources>
