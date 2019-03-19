@@ -176,11 +176,11 @@ public class CanvasView extends View {
     public String getChoosenToString() {
         switch (this.theChoosen) {
             case 0:
-                return "Rectangles";
+                return "Rectangles".toUpperCase();
             case 1:
-                return "Carrés";
+                return "Carrés".toUpperCase();
             default:
-                return "Cercles";
+                return "Cercles".toUpperCase();
         }
     }
 
