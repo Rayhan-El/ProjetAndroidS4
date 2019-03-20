@@ -164,10 +164,6 @@ public class CanvasView extends View {
         this.chrono.setTextColor(getResources().getColor(android.R.color.black));
     }
 
-    public void setScoreReactTime(int score) {
-        this.scoreReactTime = score;
-    }
-
     public void setInfoGameView(TextView t) {
         this.infoGame = t;
         this.infoGame.setTextColor(getResources().getColor(android.R.color.black));

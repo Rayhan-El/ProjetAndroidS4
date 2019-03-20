@@ -48,15 +48,6 @@ public class Game2 extends Activity {
         h.postDelayed(r, 500);
     }
 
-    public void clearCanvas(View v) {
-        myCanvas.clearCanvas();
-    }
-
-    public void newFormes(View v) {
-        myCanvas.initializeFormes(1);
-        myCanvas.invalidate();
-    }
-
     @Override
     public void onBackPressed() {
         // Empeche l'utilisateur a faire retour, il est obligé de cliquer sur "Continuer"
